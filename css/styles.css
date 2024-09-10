@@ -1,17 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
 
+:root {
+    --bg-gray: #ddd;
+    --color-primary: #4d41c0;
+    --wite: #fff;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0
+}
+
 html, body {
-    background-color: #ddd;
+    background-color: var(--bg-gray);
 }
 
 header {
-    background-color: #4d41c0;
-    color: #ffffff
+    background-color: var(--color-primary);
+    color: var(--wite);
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 nav {
@@ -20,9 +33,27 @@ nav {
     justify-content: space-between;
 }
 
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 400;
+}
 
 a, a:hover {
     color: unset;
     text-decoration: none;
 }
 
+
+.ProjetoFilmes-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.ProjetoFilmes-contact-container img {
+    margin-right: 10px;
+}
