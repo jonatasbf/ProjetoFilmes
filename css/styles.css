@@ -64,12 +64,14 @@ a, a:hover {
 }
 
 .ProjetoFilme-card {
-    width: 360px;    
+    width: 100%; 
+       
 }
 
 .ProjetoFilme-card img {
     width: 100%;
     border-radius: 8px 8px 0 0;
+    max-height: 200px;
 }
 
 .ProjetoFilme-card-description {
@@ -77,14 +79,18 @@ a, a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0 20px 0;
+    justify-content: space-between;
+    padding: 10px 20px 20px 20px;
     border-radius: 0 0 8px 8px;
+    min-height: 200px;
+        
 }
 
 .ProjetoFilme-card-description h3 {
     margin-bottom: 25px;
     font-size: 14px;
     font-weight: 700;
+    text-align: center;
 
 }
 
